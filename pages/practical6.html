@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-6</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(201, 200, 200);
+        margin: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        letter-spacing: 3px;
+        color: white;
+        font-size: 40px;
+      }
+      .container {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        margin-top: 20px;
+        
+      }
+      .box {
+        margin: 5px 5px;
+        /* border: 2px black solid; */
+        border-radius: 5px;
+        float: left;
+        width: 270px;
+        margin: 30px;
+        box-shadow: 3px 3px 3px 3px black;
+        background-color: white;
+      }
+      .box:hover {
+        background-color: rgb(61, 51, 53);
+        box-shadow: 3px 3px 3px 3px white;
+        transition: 2s;
+      }
+      .box:hover .title h2 {
+        color: white;
+      }
+
+      .box:hover .description {
+        color: white;
+      }
+      .box-img img {
+        width: 100%;
+        border-radius: 10px;
+        height: 150px;
+      }
+      .box-img {
+        padding: 20px;
+      }
+      .title h2 {
+        text-align: center;
+        width: 100%;
+      }
+      .title {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .description {
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        height: 200px;
+        line-height: 20px;
+      }
+      .description .button {
+        background-color: grey;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      .button a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+      .button a:hover {
+        transition: transform 2s;
+        transform: scale(1.2);
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Practical-6:Create a Card Layout using CSS layout properties.
+    </h1>
+    <div class="container">
+      <div class="box">
+        <div class="box-img">
+          <img src="../img/intro-html.png" alt="" />
+        </div>
+        <div class="title">
+          <h2>Introduction to html</h2>
+        </div>
+        <div class="description">
+          HTML stands for Hyper Text Markup Language. It is used to design web
+          pages using markup language. HTML is the combination of Hypertext and
+          Markup language. Hypertext defines the link between the web pages.
+          <div class="button">
+            <a href="./intro_html.html">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="../img/css-intro.jpg" alt="" />
+        </div>
+        <div class="title">
+          <h2>Introduction to CSS</h2>
+        </div>
+        <div class="description">
+          Cascading Style Sheets, fondly referred to as CSS, is a simply
+          designed language intended to simplify the process of making web pages
+          presentable. CSS allows you to apply styles to web pages.
+          <div class="button">
+            <a href="./intro_css.html">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="../img/bootstrap-intro.png" alt="" />
+        </div>
+        <div class="title">
+          <h2>Introduction to Bootstrap</h2>
+        </div>
+        <div class="description">
+          Bootstrap is a free and open-source tool collection for creating
+          responsive websites and web applications. It is the most popular HTML,
+          CSS, and JavaScript framework for developing responsive, mobile-first
+          web sites.
+          <div class="button">
+            <a href="./intro_bootstrap.html">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="../img/intro-javascript.jpg" alt="" />
+        </div>
+        <div class="title">
+          <h2>Introduction to Javascript</h2>
+        </div>
+        <div class="description">
+          JavaScript is a lightweight, cross-platform and interpreted scripting
+          language. It is well-known for the development of web pages, many
+          non-browser environments also use it.The most common host environment
+          is the browser.
+          <div class="button">
+            <a href="./intro_js.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
