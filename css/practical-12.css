@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: lightgrey;
+}
+.custom-table {
+    background-color: #fff;
+    margin:8px auto;
+    text-align:center;
+    padding:8px;
+    width:600px;
+}
+table {
+    border-collapse: collapse;
+}
+.custom-table h3 {
+    text-transform: uppercase;
+    padding: 4px 12px 12px;
+}
+.custom-table table th {
+    width:150px;
+    height:64px;
+    font-size: larger;
+    color:#64548f;
+}
+.custom-table table th i {
+    margin-right: 8px;
+}
+.custom-table table tbody tr:first-child {
+    color:green;
+    font-weight: bold;
+}
+.custom-table table tbody tr:nth-child(odd) {
+    background-color:#edf3e2;
+}
+.custom-table table .basic {
+    background-color: #c1dcb7;
+    border-right:2px solid white;
+}
+.custom-table table .plus {
+    background-color: #bad6c8;
+    border-right:2px solid white;
+}
+.custom-table table .deluxe {
+    background-color: #bbd3dc;
+    border-right:2px solid white;
+}
+.custom-table table .pro {
+    background-color: #d5e4bc;
+}
+.custom-table table tfoot tr  {
+    background-color: #edf3e2;
+}
+.custom-table table tfoot tr td a:hover {
+    background-color:red;
+}
+.custom-table table tfoot tr td a{
+    display:inline-block;
+    background-color: #64548f;
+    color:#fff;
+    padding:12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.custom-table table tr td {
+    padding:8px;
+}
+.green {
+    color:green;
+    
+}
+.red {
+    color: red;
+}
