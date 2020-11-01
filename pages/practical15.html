@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        body {
+            background-color: grey;
+            padding:48px 0px;
+        }
+        h1,div {
+            color:white;
+            text-align: center;
+            text-transform: uppercase;
+            
+        }
+        #btn-1,#btn-2 {
+            background-color: yellow;
+            font-size: large;
+            font-weight: bold;
+            height:36px;
+            width:36px;
+            margin:0px 48px;
+        }
+        #number {
+            font-size: 30px;
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div>
+        <button id="btn-1" disabled="ture" >-</button>
+        <span id="number">0</span>
+        <button id="btn-2" onclick=add()>+</button>
+    </div>
+    <script>
+        const numObj=document.getElementById('number');
+        function check() {
+            let flag;
+            if(numObj.innerHTML=="0") {
+                flag=true;
+            }
+            else {
+                flag=false;
+            }
+            document.getElementById("btn-1").disabled=flag;
+        }
+        function add() {
+            numObj.innerHTML=parseInt(numObj.innerHTML)+1;
+            check();  
+        }
+        document.getElementById("btn-1").addEventListener("click",function() {
+            numObj.innerHTML=parseInt(numObj.innerHTML)-1;
+            check();
+        });
+    </script>
+</body>
+</html>
