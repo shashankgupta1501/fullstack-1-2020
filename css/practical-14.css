@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #f3eedd;
+}
+hr {
+    background-color:red;
+    background-image: linear-gradient(to right,red 10%,yellow,green,blue 90%);
+    border: 0;
+    height:2px;
+}
+h1 {
+    color: red;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:24px;
+}
+.forms {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top:32px;
+}
+.forms form {
+    background-color: white;
+    border:2px solid #42330e1e;
+    border-radius: 6px;
+    width:25%;
+    min-width:318px;
+    max-width:424px;
+    height:380px;
+    overflow:hidden;
+}
+.forms .social a:nth-child(1):hover {
+    color: #3b5999;
+}
+.forms .social a:nth-child(2):hover {
+    color: #55acee;
+}
+.forms .social a:nth-child(3):hover {
+    color: #dd4b39;
+}
+.form-main  {
+    padding:12px 24px 24px;
+}
+.form-main .email,.form-main .password {
+    color:#6c757d9f;
+    display: flex;
+    flex-direction: column;
+    font-weight:bold;
+    border-bottom: 2px solid #ccc;
+    transition: 0.2s;
+    margin-top:8px;
+    font-size: 0.87rem;
+    height: 52px;
+    padding-top:8px;
+}
+.form-main .email input,.form-main .password input {
+    color: #6c7557;
+    border:none;
+    font-size: 1rem;
+    outline:none;
+    transition: 0.2s;
+    height:16px;
+    margin: 4px 0px;
+}
+.form-main .email input:focus,.form-main .password input :focus {
+    margin-top:8px;
+}
+.form-main .email:focus-within,.form-main .password:focus-within{
+    color:blue;
+    border-bottom-color: blue;
+    font-size: small;
+    padding-top: 0;
+}
+.form-1 .form-head {
+    background-image: linear-gradient(45deg,yellow,orange,red);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color:white;
+    text-align: center;
+    padding:16px;
+}
+.form-1 .form-head .social {
+    margin-top:16px;
+}
+.form-1 .form-head .social a {
+    color:white;
+    font-size: 1.25rem;
+    margin:8px;
+    transition:0.4s;
+}
+.form-1 .form-main p{
+    text-align: right;
+    color:#6c757d;
+    font-size: 12px;
+    margin-top: 12px;
+    
+}
+.form-1 .form-main p a{
+    color:#6c757d;
+    font-weight: bold;
+    text-decoration: none;
+}
+.form-1 .form-main p a:hover {
+    color:#000;
+}
+.form-1 .form-main div:last-of-type,.form-2 .form-main div{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:48px;
+}
+.form-1 .form-main input[type=submit],.form-2 .form-main input[type=submit]{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343a40;
+    color:white;
+    line-height: 32px;
+    text-transform: uppercase;
+    height:32px;
+    width:80px;
+    border-radius: 16px;
+    border:none;
+    cursor: pointer;
+}
+.form-1 .form-main input[type=submit]:hover,.form-2.form-main input[type=submit]:hover {
+    background-color: #000;
+}
+.form-1 .form-main input[type=submit]:active,.form-2 .form-main input[type=submit]:active {
+    outline:none;
+}
+.form-1 .form-main div:last-of-type p,.form-2 .form-main div:last-of-type p{
+    margin: 0;
+    line-height: 32px;
+}
+.form-2 h2 {
+    text-align: center;
+    color: palevioletred;
+    margin:12px 0px;
+}
+.form-2 .chk {
+    display:block;
+    font-size: 12px;
+    margin:20px 0px;
+}
+.form-2 .chk input[type="checkbox"] {
+    margin-right:16px;
+}
+.form-2 .chk a ,.form-2 .form-main div p a{
+    text-decoration: none;
+    color:rgb(92, 176, 209);
+}
+.form-2 .chk a:hover,.form-2 .form-main div p a:hover{
+    color:blue;
+}
+.form-2 .social {
+    display:flex;
+    background-color: slategray;
+    justify-content: center;
+    align-items: center;
+    height:64px;
+    position: relative;
+    bottom: -4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.form-2 .social a {
+    color:white;
+    font-size: 1.25rem;
+    margin:8px;
+    transition:0.4s;
+}
+.form-2 div p {
+    font-size: 12px;
+}
+.form-2 .form-main div {
+    margin-top:32px;
+}
+.form-2 .form-main input[type=submit] {
+    width:120px;
+    background-color: palevioletred;
+    transition:0.4s;
+}
+.form-2 .form-main input[type=submit]:hover {
+    background-color: purple;
+}
+.form-3 h2 {
+    text-align: center;
+    margin:12px 0px;
+}
+.form-3 .form-main>a {
+    float: right;
+    font-size: 12px;
+    text-decoration:none;
+    color:rgb(92, 176, 209);
+    margin:12px 0;
+    transition:0.4s;
+}
+.form-3 .form-main>a:hover {
+    color:blue;
+}
+.form-3 .form-main input[type=submit] {
+    display:block;
+    width:100%;
+    border:none;
+    background-color: blue;
+    color:white;
+    padding:10px;
+    border-radius: 22px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,skyblue,blue,darkblue);
+    margin-top:56px;
+    transition:0.4s;
+    cursor: pointer;
+}
+.form-3 .form-main input[type=submit]:hover {
+    background-image: linear-gradient(to right,darkblue,blue,skyblue);
+}
+.form-3 .form-main input[type=submit]:active {
+    outline:none;
+}
+.form-3 .form-footer p {
+    font-size:12px;
+    text-align: center;
+}
+.form-3 .social {
+    display:flex;
+    margin-top:16px;
+    justify-content: space-evenly;
+}
+.form-3 .social a {
+    display:block;
+    text-align: center;
+    padding:4px;
+    width:48px;
+    border-radius: 14px;
+    box-shadow: 0px 1px 1px 1px rgba(92, 176, 209,0.4);
+    transition: 0.4s;
+    border:1px solid white;
+    color:rgb(92, 176, 209);
+}
+.form-3 .social a:hover {
+    border:1px solid rgb(92, 156, 209);
+}
+@media (max-width:1023px) {
+    .forms {
+        display:block;
+    }
+    .forms form {
+        margin:32px auto;
+    }
+}

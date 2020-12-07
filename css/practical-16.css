@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: linear-gradient(to right,skyblue,blue);
+    min-height: 100vh;
+}
+h1 {
+    color:white;
+    padding-top:32px;
+    text-align: center;
+}
+form{
+    background-color: white;
+    margin:48px auto 32px;
+    width: fit-content;
+    text-align: center;
+}
+form input {
+    border:none;
+    outline:none;
+    font-size: 16px;
+    width:260px;
+    font-weight: 500;
+    padding: 8px;   
+}
+form button {
+    background-color: white;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    padding: 8px
+}
+form button i.fa {
+    display:inline-block;
+    background-color: darkblue;
+    color:white;
+    font-size: 12px;
+    padding:4px;
+}
+form button:hover {
+    background-color: skyblue;
+}
+ul.to-do-list {
+    list-style: none;
+    width: fit-content;
+    margin:auto;
+}
+.to-do-list div {
+    display:flex;
+    margin:6px auto;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.to-do-list div li{
+    flex:1;
+    max-width:240px;
+    min-width: 150px;
+    height:36px;
+    line-height: 24px;
+    overflow: hidden;
+    padding:8px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.to-do-list div button#check-btn {
+    background-color: green;
+    color:white;
+    height:36px;
+    width:36px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.to-do-list div button#trash-btn {
+    background-color: rgb(248, 32, 104);
+    color:white;
+    height:36px;
+    width:36px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.to-do-list div button i {
+    pointer-events: none;
+}
+.checked {
+    opacity: .75;
+    text-decoration: line-through;
+}
